@@ -1,3 +1,6 @@
+import React from "react";
+import Nations from "./Nations";
+
 function Home() {
   return (
     <div className="Homepage">
