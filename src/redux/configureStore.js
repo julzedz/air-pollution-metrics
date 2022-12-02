@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import rocketReducer from "./rockets/rocketSlice";
+import pollutionReducer from "./Slice/slice";
 
 const store = configureStore({
   reducer: {
-    // rockets: rocketReducer,
+    pollution: pollutionReducer,
   },
 });
 
