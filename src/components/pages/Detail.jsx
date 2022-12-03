@@ -1,38 +1,38 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
-import data from '../data/data'
-import back from '../images/back-arrow.png'
-import { getPollutionData } from "../../redux/Slice/slice";
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
+import data from '../data/data';
+import back from '../images/back-arrow.png';
+import { getPollutionData } from '../../redux/Slice/slice';
+import '../../App.css';
 
 function Detail() {
-  const { nation } = useParams();
+  const { country } = useParams();
   const [map, setMap] = useState('');
   const [name, setName] = useState('');
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     data.forEach((e) => {
-      if (e.nation === nation) {
+      if (e.country === country) {
         setMap(e.map);
-        setName(e.nation);
+        setName(e.country);
         const endPoint = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${e.latitude}&lon=${e.longitude}&appid=0dbad6356ef49815329c4c3638a175f7`;
-        dispatch(getPollutionData(endPoint))
+        dispatch(getPollutionData(endPoint));
       }
     });
-  }, [nation, dispatch]);
+  }, [country, dispatch]);
   const pollutionData = useSelector((state) => state.pollution.data);
-  const loading = useSelector((state) => state.pollution.loading)
+  const loading = useSelector((state) => state.pollution.loading);
   return (
-    <div>
+    <div className="details">
       <div>
-        <button type="button" onClick={() => navigate('/')}>
-          <img src={back} alt="back button" />
+        <button className="back-button" type="button" onClick={() => navigate('/')}>
+          <img className="backbutton-img" src={back} alt="back button" />
           Back
         </button>
       </div>
-      <div className="back-home" />
       {!loading ? (
         <div className="country-details">
           <div className="country-info">
@@ -40,27 +40,23 @@ function Detail() {
             <img src={map} alt="Map" />
           </div>
           <div className="pollution-data">
-            <Table>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Gas</th>
-                  <th>Concentration</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pollutionData && pollutionData.map((data, i) => (
-                  <tr key={data[0]}>
-                    <td>{i + 1}</td>
-                    <td>{data [0]}</td>
-                    <td>
+            <ul className="pollution-table">
+              {pollutionData
+                && pollutionData.map((data) => (
+                  <li className="data-item" key={data[0]}>
+                    <p className="text">
+                      Gas:
+                      {' '}
+                      {data[0]}
+                    </p>
+                    <p className="text">
                       {data[1]}
+                      {' '}
                       µg/m3
-                    </td>
-                  </tr>
+                    </p>
+                  </li>
                 ))}
-              </tbody>
-            </Table>
+            </ul>
           </div>
         </div>
       ) : (

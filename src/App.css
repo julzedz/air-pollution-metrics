@@ -12,3 +12,34 @@
   width: 2em;
   height: 1.5em;
 }
+
+.Homepage {
+  background-color: rgb(0, 187, 255);
+  height: 100vh;
+}
+
+.nations {
+  background-color: rgb(0, 187, 255);
+}
+
+.details {
+  background-color: #00bbff;
+}
+
+.map {
+  width: 25vw;
+  height: 35vh;
+}
+
+.nation {
+  background-color: #00ffeea4;
+  padding: 3em;
+}
+
+.states {
+display: flex;
+flex-wrap: wrap;
+gap: 2em;
+align-items: center;
+justify-content: center;
+}

@@ -1,14 +1,14 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const initialState = { data: [], loading: false, error: null };
 
 export const getPollutionData = createAsyncThunk(
   'pollutionData',
-  async(url) => {
+  async (url) => {
     const data = await fetch(url);
     const pollutionInfo = await data.json();
     return pollutionInfo;
-  }
+  },
 );
 
 export const pollutionSlice = createSlice({
@@ -27,7 +27,7 @@ export const pollutionSlice = createSlice({
       newState.loading = false;
       const array = payload.list[0];
       const components = Object.entries(array.components);
-      newState.data = components
+      newState.data = components;
       return newState;
     });
   },

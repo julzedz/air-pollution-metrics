@@ -1,5 +1,6 @@
-import React from "react";
-import Nations from "./Nations";
+import React from 'react';
+import Nations from './Nations';
+import '../../App.css';
 
 function Home() {
   return (

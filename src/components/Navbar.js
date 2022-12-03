@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 import logo from './images/icons8.png';
-import '../App.css'
-import { Outlet } from "react-router-dom";
+import '../App.css';
 
 function Navbar() {
   return (

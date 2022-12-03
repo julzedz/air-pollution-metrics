@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/details' element={<Detail />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/:country" element={<Detail />} />
       </Routes>
     </div>
   );
