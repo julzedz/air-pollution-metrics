@@ -37,7 +37,7 @@ function Detail() {
         <div className="country-details">
           <div className="country-info">
             <h1>{name}</h1>
-            <img src={map} alt="Map" />
+            <img className="detail-map" src={map} alt="Map" />
           </div>
           <div className="pollution-data">
             <ul className="pollution-table">
