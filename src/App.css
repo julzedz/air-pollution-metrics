@@ -69,6 +69,8 @@ width: 100%;
 
 .data-item {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   background-color: #45a5d9;
 }
@@ -124,10 +126,20 @@ a {
 }
 
 .footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: #0c5bb6;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 2em;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
 }

@@ -5,6 +5,7 @@ import data from '../data/data';
 import back from '../images/back-arrow.png';
 import { getPollutionData } from '../../redux/Slice/slice';
 import '../../App.css';
+import Footer from '../Footer';
 
 function Detail() {
   const { country } = useParams();
@@ -64,6 +65,7 @@ function Detail() {
           <h3>Loading...</h3>
         </div>
       )}
+      <Footer />
     </div>
   );
 }
