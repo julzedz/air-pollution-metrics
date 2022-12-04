@@ -4,7 +4,7 @@ const initialState = [];
 describe('Tests Redux in project', () => {
   it('Tests if it returns same item in the array', () => {
     expect(
-      sliceReducer(initialState, getPollutionData(['Albania']))
+      sliceReducer(initialState, getPollutionData(['Albania'])),
     ).not.toEqual(['Albania']);
   });
 
