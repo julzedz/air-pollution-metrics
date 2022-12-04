@@ -105,7 +105,7 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .4em;
+  gap: 0.4em;
 }
 
 a {

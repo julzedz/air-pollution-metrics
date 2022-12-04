@@ -1,3 +1,4 @@
+import React from 'react';
 import facebook from './images/facebook.png';
 import twitter from './images/twitter.png';
 import linkedin from './images/linkedin.png';
