@@ -1,4 +1,4 @@
-import sliceReducer, { getPollutionData } from "../redux/slice";
+import sliceReducer, { getPollutionData } from '../redux/Slice/slice';
 
 const initialState = [];
 describe("Tests Redux in project", () => {
