@@ -26,7 +26,7 @@
 
 # 📖 Air Pollution Metrics <a name="about-project"></a>
 
-> **Air Pollution Metrics** is an application that provides current, forecast and historical air pollution data for some countries. You can check the pollution index of your country by simply scrolling or searching for it using the search bar and clicking on it to show more details. This application is built with React.js and Bootstrap.
+> **Air Pollution Metrics** is an application that provides current, forecast and historical air pollution data for some countries. You can check the pollution index of your country by simply scrolling or searching for it using the search bar and clicking on it to show more details. This application is built with React.js.
 
 ## 🛠 Built With <a name="built-with"></a>
 

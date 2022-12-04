@@ -9,27 +9,27 @@ function Footer() {
   return (
     <div className="footer">
       <div className="icons">
-        <a href="https://facebook.com/" target="_blank" rel="noreferrer">
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
           <img width={30} height={30} src={facebook} alt="" />
         </a>
         <a
           href="https://twitter.com/julesedz"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <img width={30} height={30} loading="lazy" src={twitter} alt="" />
         </a>
         <a
           href="https://www.linkedin.com/in/julesedozie"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <img width={30} height={30} src={linkedin} alt="" />
         </a>
         <a
           href="https://github.com/julzedz"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <img width={30} height={30} loading="lazy" src={github} alt="" />
         </a>
