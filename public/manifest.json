@@ -1,0 +1,15 @@
+{
+  "short_name": "Air Pollution Metric",
+  "name": "Air Pollution Metric",
+  "icons": [
+    {
+      "src": "floating-island-factory.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
