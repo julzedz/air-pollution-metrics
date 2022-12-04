@@ -21,7 +21,7 @@ body {
 
 .hamburger {
   width: fit-content;
-  height:1em;
+  height: 1em;
 }
 
 .Homepage {
@@ -55,12 +55,12 @@ body {
 
 .states {
   background-color: antiquewhite;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-justify-content: center;
-align-items: stretch;
-gap: 0;
-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
 }
 
 .title-con {
@@ -75,7 +75,8 @@ width: 100%;
   background-color: #45a5d9;
 }
 
-.pollution-table, .pollution-data {
+.pollution-table,
+.pollution-data {
   width: 100%;
   padding: 0;
 }
